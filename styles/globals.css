@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #28093d;
 }
 
 * {
@@ -32,4 +33,98 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #4B0082;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+.postTitle {
+  background-color: rgba(255, 255, 255, 0.808);
+  padding: 1.5rem;
+}
+
+.postDate {
+  background-color: rgba(255, 255, 255, 0.808);
+  padding: 1rem;
+}
+
+.post {
+  background-color: rgba(255, 255, 255, 0.808);
+  padding: 5rem;
+}
+
+.backLink {
+  background-color: rgba(255, 255, 255, 0.808);
+  padding: 1.5rem;
+}
+
+.bodyBackground {
+  /* background-color: #0e0216; */
+  /* background-image: url("photographer.jpg"); The image used */
+  /* height: 500px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* style={{backgroundImage: `url(${home.mainImage.fields.file.url})`}} */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  background-color: rgb(197, 22, 139);
+  margin-top: 50px;
+  /* height: 500px */
+  /* margin: 1.5rem 0;
+  width: 50%;
+  padding: 2rem 5rem;
+  background-color: #f8f8f8;
+  height: 10rem; */
+}
+
+.mainLeft {
+  width: 50%;
+  height: 100%;
+  margin-top: -25px;
+  margin-left: 30px;
+  background-color: black;
+}
+
+.mainRight {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.808);
+  margin-left: -50px;
+  margin-top: 25px;
+  padding: 5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .mainLeft {
+    width: 100%;
+  }
+
+  .mainRight {
+    width: 100%;
+    margin-left: 60px;
+    margin-top: -600px;
+    height: 80%;
+    padding: 3rem;
+    /* margin-top: -10px; */
+  }
 }
